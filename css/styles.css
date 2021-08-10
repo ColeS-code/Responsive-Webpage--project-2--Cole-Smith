@@ -4,21 +4,15 @@
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.6;
   color: royalblue;
-  margin: 0;
 }
 h1 {
   color: lightslategray;
-  margin: 0 auto;
 }
 h2,
 h3,
 a {
   color: lightsteelblue;
-}
-h2 {
-  padding: .5rem;
 }
 
 /* -- Base Layout Styles -- */
@@ -30,13 +24,6 @@ h2 {
   position: fixed;
   text-align: center;
 }
-.nav {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-}
 .nav .name {
   display: block;
   margin-right: auto;
@@ -45,31 +32,40 @@ h2 {
 }
 .nav li {
   padding: 10px 10px 10px 10px;
-  font-weight: 500;
   color: skyblue;
 }
-.main-header {
-  display: block;
-  padding-top: 60px;
+.nav-link {
+  font-weight: 700;
 }
-.intro-text {
-  display: flex;
-}
-.logo {
- text-align: right;
-}
+
 /* -- Layout Containers -- */
-
-
-
-
-
-
-
-
-
-
-
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+}
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding-top: 2.5%;
+}
+.intro-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: auto;
+}
 /* -- Media Queries -- */
 @media (min-width: 768px) {
 
