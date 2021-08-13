@@ -4,34 +4,52 @@
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: royalblue;
+  color: lightsteelblue;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 h1 {
   color: lightslategray;
 }
-h2,
+h2 {
+  color: lightslategray;
+}
 h3,
 a {
   color: lightsteelblue;
 }
-.name {
-  color: lightsteelblue;
+a {
+  text-decoration: none;
+}
+p {
+  font-weight: 500;
+}
+.unit .p {
+  font-weight: 500;
 }
 /* -- Base Layout Styles -- */
-.main-nav {
-  width: 100%;
-  background: lightslategray;
-  min-height: 30px;
-  position: fixed;
-  text-align: center;
-}
 .name {
-  display: block;
-  margin-right: auto;
-  font-weight: 700;
+  font-size: 1.35em;
+  text-align: center;
+  margin: 0;
 }
-.nav li {
-  padding: 10px 25px 10px 10px;
+.intro-title {
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 8px;
+}
+.main-nav {
+  margin-top: 5px;
+}
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
 }
 .nav-link {
   font-weight: 700;
@@ -42,54 +60,34 @@ a {
   padding-right: 25px;
 }
 /* -- Layout Containers -- */
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
-
-.intro-title {
+.main-header,
+.main-footer {
   text-align: center;
 }
-
-
-  
-
+.main-header {
+ color: azure;
+ background: rgb(138, 137, 137);
+ padding: 9px 9px 9px 9px;
+ margin: 9px 9px 9px 9px;
+}
+.main-footer {
+  color: azure;
+  background: rgb(138, 137, 137);
+ padding-top: 14px;
+  padding-bottom: 11px;
+} 
+.container {
+  padding-right: 1em;
+  padding-left: 1em;
+}
 /* -- Media Queries -- */
 @media (min-width: 768px) {
-  .main-header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 2.5%;
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 70%;
-    max-width: 1000px;
-    margin: 0 auto;
-    
-  }
-
+  
 }
 @media (min-width: 1024px) {
-  .main-header {
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-around;
-  }   
-
+ 
 }
