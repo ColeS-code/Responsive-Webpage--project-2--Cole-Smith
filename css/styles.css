@@ -1,10 +1,10 @@
 /* -- Base Element Styles -- */
+
 * {
   box-sizing: border-box;
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: lightsteelblue;
   margin: 0;
 }
 ul {
@@ -20,7 +20,7 @@ h2 {
 }
 h3,
 a {
-  color: lightsteelblue;
+  color: lightslategrey;
 }
 a {
   text-decoration: none;
@@ -32,6 +32,9 @@ p {
   font-weight: 500;
 }
 /* -- Base Layout Styles -- */
+.main-header {
+  background-color: cadetblue;
+}
 .name {
   font-size: 1.35em;
   text-align: center;
@@ -59,35 +62,98 @@ p {
   padding-left: 25px;
   padding-right: 25px;
 }
-/* -- Layout Containers -- */
-.main-header {
-  padding-top: .5em;
-  padding-bottom: .5em;
+.container-2 {
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;  
 }
-.main-header,
+.logo {
+  padding: 5px 5px 5px 5px;
+}
+/* -- Layout Containers -- */
+
+.intro-unit,
 .main-footer {
   text-align: center;
 }
-.main-header {
- color: azure;
- background: rgb(138, 137, 137);
+.intro-unit {
+ color: rosybrown;
+ background: aliceblue;
  padding: 9px 9px 9px 9px;
- margin: 9px 9px 9px 9px;
+ margin-top: 9px;
+ margin-bottom: 9px;
+ margin-left: 8px;
+ margin-right: 8px;
 }
 .main-footer {
-  color: azure;
-  background: rgb(138, 137, 137);
- padding-top: 14px;
-  padding-bottom: 11px;
+  color: floralwhite;
+  background-color: cadetblue;
+  padding: 14px 10px 11px 10px;
 } 
 .container {
   padding-right: 1em;
   padding-left: 1em;
 }
+.container-2 {
+  padding-right: 1em;
+  padding-left: 1em;  
+}
+.unit {
+  padding: 10px 10px 10px 10px;
+}
 /* -- Media Queries -- */
+
 @media (min-width: 768px) {
-  
+  .intro-unit,
+  .container,
+  .container-2 {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 1024px) {
- 
+  .intro-unit,
+  .container,
+  .container-2 {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }  
+}
+
+/* -- Flex Box -- */
+
+@media (min-width: 769px) {
+  .main-header,
+  .intro-unit,
+  .container,
+  .container-2 {
+      display: flex;
+     
+  }
+  .main-header,
+  .intro-unit {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  .container,
+  .container-2 {
+      flex-direction: column;
+      justify-content: space-around;
+  }
+}
+
+@media (min-width: 1025px) {
+   .main-header {
+       flex-direction: row;
+       justify-content: space-between;
+   }
+   .intro-unit {
+     flex-direction: row-reverse;
+   }
+   .container,
+   .container-2 {
+       flex-direction: row;
+       justify-content: space-around;
+   }   
 }
