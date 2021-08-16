@@ -26,6 +26,8 @@ a {
   text-decoration: none;
 }
 p {
+  padding: 8px;
+  padding-top: 15px;
   font-weight: 500;
 }
 .unit .p {
@@ -34,10 +36,11 @@ p {
 /* -- Base Layout Styles -- */
 .main-header {
   background-color: cadetblue;
+  padding: 15px 15px 15px 15px;
 }
 .name {
   font-size: 1.35em;
-  text-align: center;
+  
   margin: 0;
 }
 .intro-title {
@@ -48,11 +51,11 @@ p {
 .main-nav {
   margin-top: 5px;
 }
-.name a,
+
 .main-nav a {
   text-align: center;
-  display: block;
-  padding: 10px 15px;
+  line-height: 2em;
+  padding: 15px 15px 15px 15px;
 }
 .nav-link {
   font-weight: 700;
@@ -71,7 +74,9 @@ p {
   padding: 5px 5px 5px 5px;
 }
 /* -- Layout Containers -- */
-
+h1 a {
+  padding: 0px;
+}
 .intro-unit,
 .main-footer {
   text-align: center;
@@ -80,7 +85,7 @@ p {
  color: rosybrown;
  background: aliceblue;
  padding: 9px 9px 9px 9px;
- margin-top: 9px;
+ margin-top: 20px;
  margin-bottom: 9px;
  margin-left: 8px;
  margin-right: 8px;
@@ -115,7 +120,7 @@ p {
   .intro-unit,
   .container,
   .container-2 {
-    width: 90%;
+    width: 80%;
     max-width: 1150px;
    
   }  
@@ -123,7 +128,7 @@ p {
 
 /* -- Flex Box -- */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .main-header,
   .intro-unit,
   .container,
@@ -131,10 +136,12 @@ p {
       display: flex;
      
   }
-  .main-header,
+  .main-header {
+    flex-direction: column;
+    
+  }
   .intro-unit {
       flex-direction: column;
-      align-items: center;
   }
   .container,
   .container-2 {
@@ -143,7 +150,7 @@ p {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
    .main-header {
        flex-direction: row;
        justify-content: space-between;
