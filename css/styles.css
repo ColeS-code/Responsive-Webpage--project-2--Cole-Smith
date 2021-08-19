@@ -9,9 +9,9 @@ body {
   margin: 0;
 }
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 h1 {
   color: lightslategray;
@@ -41,7 +41,7 @@ p {
 }
 .name {
   font-size: 1.35em;
-  
+  text-align: center;
   margin: 0;
 }
 .intro-title {
@@ -52,7 +52,9 @@ p {
 .main-nav {
   margin-top: 5px;
 }
-
+.nav-link{
+  text-align: center;
+}
 .main-nav a {
   text-align: center;
   line-height: 2em;
@@ -131,6 +133,7 @@ h1 a {
 
 @media (min-width: 768px) {
   .main-header,
+  .main-nav,
   .intro-unit,
   .container,
   .container-2 {
@@ -140,6 +143,7 @@ h1 a {
   .main-header {
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
   }
   .intro-unit {
       flex-direction: column;
@@ -155,6 +159,9 @@ h1 a {
    .main-header {
        flex-direction: row;
        justify-content: space-between;
+   }
+   .main-nav {
+     flex-direction: row;
    }
    .intro-unit {
      flex-direction: row-reverse;
