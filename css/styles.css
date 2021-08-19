@@ -146,7 +146,7 @@ h1 a {
     justify-content: space-around;
   }
   .intro-unit {
-      flex-direction: column;
+      flex-direction: row-reverse;
   }
   .container,
   .container-2 {
