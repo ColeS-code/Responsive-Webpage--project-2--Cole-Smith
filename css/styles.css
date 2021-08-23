@@ -36,8 +36,15 @@ p {
 }
 /* -- Base Layout Styles -- */
 .main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color:lightsalmon;
   padding: 15px 15px 15px 15px;
+}
+main {
+  margin-top: 3rem;
 }
 .name {
   font-size: 1.35em;
