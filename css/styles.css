@@ -132,10 +132,9 @@ h1 a {
   .container-2 {
     width: 90%;
     max-width: 1150px;
-   
   }
   .intro-unit {
-    margin-top: 5rem;
+    margin: 5rem auto;
   }
 }
 
@@ -157,6 +156,7 @@ h1 a {
   }
   .intro-unit {
       flex-direction: row-reverse;
+      justify-content: space-around;
   }
   .container,
   .container-2 {
