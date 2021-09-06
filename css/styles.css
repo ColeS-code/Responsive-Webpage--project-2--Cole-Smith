@@ -149,6 +149,7 @@ h1 a {
   .intro-unit,
   .container,
   .container-2,
+  .main-footer,
   .footer-nav {
       display: flex;
      
@@ -168,8 +169,13 @@ h1 a {
       flex-direction: column;
       justify-content: space-around;
   }
-  .footer-nav {
+  .main-footer {
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer-nav {
+    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -189,5 +195,9 @@ h1 a {
    .container-2 {
        flex-direction: row;
        justify-content: space-around;
+   }
+   .footer-nav {
+     flex-direction: row;
+     justify-content: space-between;
    }   
 }
