@@ -8,9 +8,7 @@ body {
   background-color:peachpuff;
   margin: 0;
 }
-img {
-  max-width: 100%;
-}
+
 ul {
   list-style: none;
   padding: 0;
@@ -86,6 +84,11 @@ main {
 .logo {
   padding: 5px 5px 5px 5px;
 }
+.footer-list {
+  text-align: center;
+  padding: .5rem;
+  margin: 1rem;
+}
 /* -- Layout Containers -- */
 h1 a {
   padding: 0px;
@@ -150,7 +153,7 @@ h1 a {
   .container,
   .container-2,
   .main-footer,
-  .footer-nav {
+  .footer-list {
       display: flex;
      
   }
@@ -174,7 +177,7 @@ h1 a {
     align-items: center;
     justify-content: space-around;
   }
-  .footer-nav {
+  .footer-list {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -196,7 +199,7 @@ h1 a {
        flex-direction: row;
        justify-content: space-around;
    }
-   .footer-nav {
+   .footer-list {
      flex-direction: row;
      justify-content: space-between;
    }   
