@@ -36,6 +36,44 @@ p {
   font-weight: 500;
 }
 /* -- Base Layout Styles -- */
+
+.main-header,
+  .main-nav,
+  .intro-unit,
+  .container,
+  .container-2,
+  .main-footer,
+  .footer-nav,
+  .footer-list {
+      display: flex;
+     
+  }
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .intro-unit {
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      
+  }
+  .container,
+  .container-2 {
+      flex-direction: column;
+      justify-content: space-around;
+  }
+  .main-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer-list,
+  .footer-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 .main-header {
   position: fixed;
   top: 0;
@@ -146,7 +184,7 @@ h1 a {
 
 /* -- Flex Box -- */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .main-header,
   .main-nav,
   .intro-unit,
@@ -184,7 +222,7 @@ h1 a {
     justify-content: space-between;
   }
 }
-
+*/
 @media (min-width: 1024px) {
    .main-header {
        flex-direction: row;
