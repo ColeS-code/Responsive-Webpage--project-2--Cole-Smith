@@ -45,7 +45,6 @@ p {
   .main-nav,
   .intro-unit,
   .container,
-  .container-2,
   .main-footer,
   .footer-nav,
   .footer-list {
@@ -62,8 +61,7 @@ p {
       justify-content: space-around;
       
   }
-  .container,
-  .container-2 {
+  .container {
       flex-direction: column;
       justify-content: space-around;
   }
@@ -118,11 +116,6 @@ main {
   padding-left: 25px;
   padding-right: 25px;
 }
-.container-2 {
-  text-align: center;
-  padding-left: 25px;
-  padding-right: 25px;  
-}
 .logo {
   padding: 5px 5px 5px 5px;
 }
@@ -155,18 +148,14 @@ h1 a {
   padding-right: 1em;
   padding-left: 1em;
 }
-.container-2 {
-  padding-right: 1em;
-  padding-left: 1em;  
-}
 .unit {
   padding: 10px 10px 10px 10px;
 }
 /* -- Media Queries -- */
 
 @media (min-width: 768px) {
-  .container,
-  .container-2 {
+
+  .container {
     width: 90%;
     margin: 0 auto;
   }
@@ -175,9 +164,9 @@ h1 a {
   }
 }
 @media (min-width: 1024px) {
+
   .intro-unit,
-  .container,
-  .container-2 {
+  .container {
     width: 90%;
     max-width: 1150px;
   }
@@ -206,9 +195,8 @@ h1 a {
    .intro-unit {
      flex-direction: row-reverse;
    }
-   .container,
-   .container-2 {
-       flex-direction: row;
+   .container {
+       flex-direction: column;
        justify-content: space-around;
    }
    .footer-list {
