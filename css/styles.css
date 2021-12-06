@@ -4,26 +4,23 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Tahoma", sans-serif;
   background-color:peachpuff;
   margin: 0;
 }
-
-
+img {
+  width: 100%;
+}
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-h1 {
-  color: lightslategray;
-}
-h2 {
-  color: lightslategray;
-}
+h1,
+h2,
 h3,
 a {
-  color: lightslategrey;
+  color: lightslategray;
 }
 a {
   text-decoration: none;
@@ -37,7 +34,7 @@ p {
   font-weight: 500;
 }
 .logo {
-  max-width: 100%;
+  max-width: 90%;
 }
 /* -- Base Layout Styles -- */
 
@@ -45,35 +42,13 @@ p {
   .main-nav,
   .intro-unit,
   .container,
+  .unit,
   .main-footer,
   .footer-nav,
   .footer-list {
-      display: flex;
-     
-  }
-  .main-header {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-  }
-  .intro-unit {
-      flex-direction: column;
-      justify-content: space-around;
-      
-  }
-  .container {
-      flex-direction: column;
-      justify-content: space-around;
-  }
-  .main-footer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .footer-list,
-  .footer-nav {
-    flex-direction: row;
-    justify-content: space-between;
   }
 
 .main-header {
@@ -136,7 +111,7 @@ h1 a {
  color:lightslategray;
  background:wheat;
  padding: 9px 9px 9px 9px;
- margin-top: 150px;
+ margin-top: 200px;
 }
 .main-footer {
   color: floralwhite;
@@ -151,56 +126,22 @@ h1 a {
 .unit {
   padding: 10px 10px 10px 10px;
 }
+
+
 /* -- Media Queries -- */
-
-@media (min-width: 768px) {
-
+@media screen and (min-width:768px) {
   .container {
-    width: 90%;
-    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
   }
-  .intro-unit {
-    margin: 7rem auto;
+  .unit {
+    width: 45%;
   }
 }
-@media (min-width: 1024px) {
 
-  .intro-unit,
-  .container {
-    width: 90%;
-    max-width: 1150px;
-  }
-  .intro-unit {
-    margin: 5rem auto;
-  }
-}
+
+  
 
 /* -- Flex Box -- */
-
- @media (min-width: 768px) {
-    .intro-unit {
-     flex-direction: row-reverse;
-     justify-content: space-evenly;
-    }
- }
-
-@media (min-width: 1024px) {
-   .main-header {
-       flex-direction: row;
-       justify-content: space-between;
-   }
-   .main-nav {
-     flex-direction: row;
-   }
-   .intro-unit {
-     flex-direction: row-reverse;
-   }
-   .container {
-       flex-direction: column;
-       justify-content: space-around;
-   }
-   .footer-list {
-     flex-direction: row;
-     justify-content: space-between;
-   }   
-}
