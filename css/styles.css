@@ -9,7 +9,7 @@ body {
   margin: 0;
 }
 img {
-  width: 100%;
+  max-width: 90%;
 }
 ul {
   list-style: none;
@@ -33,19 +33,15 @@ p {
 .unit .p {
   font-weight: 500;
 }
-.logo {
-  max-width: 90%;
-}
 /* -- Base Layout Styles -- */
 
   .main-header,
-  .main-nav,
   .header-flex,
   .nav,
   .intro-unit,
+  .intro-title,
   .container,
-  .unit,
-  .footer-contact {
+  .unit {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,11 +53,8 @@ p {
   left: 0;
   width: 100%;
   background-color:lightsalmon;
-  margin-bottom: 25px;
-  padding: 15px 15px 15px 15px;
-}
-main {
-  margin-top: 3rem;
+  
+  
 }
 .name {
   font-size: 1.35em;
@@ -106,7 +99,7 @@ h1 a {
 .main-footer {
   text-align: center;
 }
-.intro-unit {
+.intro-text {
  color:lightslategray;
  background:wheat;
  padding: 9px 9px 9px 9px;
