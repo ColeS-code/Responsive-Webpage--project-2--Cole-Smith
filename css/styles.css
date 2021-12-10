@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Tahoma", sans-serif;
-  background-color:peachpuff;
+  background-color:whitesmoke;
   margin: 0;
 }
 img {
@@ -20,7 +20,7 @@ h1,
 h2,
 h3,
 a {
-  color: lightslategray;
+  color: black;
 }
 a {
   text-decoration: none;
@@ -35,25 +35,22 @@ p {
 }
 /* -- Base Layout Styles -- */
 
-  .main-header,
-  .header-flex,
-  .nav,
-  .intro-unit,
-  .container,
-  .unit {
+.main-header,
+.header-flex,
+.nav,
+.intro-unit,
+.container,
+.unit {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
+}
 .main-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color:lightsalmon;
-  
-  
+  background-color:azure; 
 }
 .name {
   font-size: 1.35em;
@@ -70,16 +67,19 @@ p {
 .main-nav {
   margin-top: 5px;
 }
-.nav-link{
+.nav-link {
+  list-style-type: none;
+  background-color: aliceblue;
+  margin-bottom: .5em;
   text-align: center;
+}
+.nav li a {
+  display: block;
+  padding: .5em;
+  text-decoration: none;
 }
 .main-nav a {
-  text-align: center;
-  line-height: 2em;
-  padding: 15px 15px 15px 15px;
-}
-.nav-link {
-  font-weight: 700;
+  padding: .5em;
 }
 .container {
   text-align: center;
@@ -98,9 +98,13 @@ h1 a {
 .main-footer {
   text-align: center;
 }
+.intro-unit img {
+  margin: auto;
+  width: 65%;
+}
 .intro-text {
- color:lightslategray;
- background:wheat;
+ color:black;
+ background: aliceblue;
  padding: 9px 9px 9px 9px;
  margin-top: 25px;
 }
@@ -111,7 +115,7 @@ h1 a {
 }
 .main-footer {
   color: floralwhite;
-  background-color: lightsalmon;
+  background-color: azure;
   margin-top: 25px;
   padding: 14px 10px 11px 10px;
 } 
