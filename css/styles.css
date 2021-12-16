@@ -48,26 +48,31 @@ p {
   width: 100%;
   background-color:azure; 
 }
+.header-flex {
+  width: 100%;
+}
 .name {
   font-size: 1.35em;
   text-align: center;
-  margin-top: 2em;
 }
 .intro-title {
   text-align: center;
   width: 100%;
   padding-top: 14px;
   padding-bottom: 8px;
+  margin-top: 3.5em;
 }
 .main-nav {
-  width: 100%;
+  width: 80%;
 }
 .nav {
   padding: 0;
 }
 .nav li {
   list-style-type: none;
-  background-color: aliceblue;
+  padding: 0;
+  min-width: 85px;
+  width: 90%;
   margin-bottom: .5em;
   text-align: center;
 }
@@ -76,9 +81,6 @@ p {
   padding: .5em;
   text-decoration: none;
   font-weight: bold;
-}
-.main-nav a {
-  padding: .5em;
 }
 .logo {
   padding: 5px 5px 5px 5px;
@@ -95,6 +97,7 @@ h1 a {
 .intro-unit img {
   margin: auto;
   width: 65%;
+  min-width: 300px;
 }
 .intro-text {
  color:black;
@@ -119,7 +122,7 @@ h1 a {
   padding-left: 1em;
 }
 .unit {
-  padding: 10px 10px 10px 10px;
+  margin-top: 2em;
 }
 .footer-contact {
   padding-top: 10px;
@@ -148,8 +151,8 @@ h1 a {
     justify-content: center;
   }
   .intro-unit {
-    flex-direction: row;
-    margin: 1em 1em;
+    flex-direction: row-reverse;
+    margin: 2em 2em;
   }
   .unit {
     width: 45%;
@@ -163,7 +166,36 @@ h1 a {
     display: inline;
   }
 }
-
+@media screen and (min-width:1052px) {
+  body {
+    padding: 1em 1em;
+  }
+  .header-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.5em 1em 1em 1em;
+    padding: 0;
+    align-items: center;
+  }
+  .main-nav {
+    width: 40%;
+  }
+  .nav {
+    align-items: flex-end;
+    align-self: flex-end;
+    margin: 0;
+  }
+  .nav li {
+    margin-bottom: 0;
+  }
+  .intro-text {
+    margin-bottom: 2em;
+    font-size: 1.5em;
+  }
+  .unit {
+    width: 29%;
+  }
+}
 
   
 
