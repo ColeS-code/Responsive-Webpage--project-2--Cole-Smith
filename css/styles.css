@@ -166,7 +166,7 @@ h1 a {
     display: inline;
   }
 }
-@media screen and (min-width:1052px) {
+@media screen and (min-width:1024px) {
   body {
     padding: 1em 1em;
   }
